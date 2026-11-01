@@ -26,14 +26,12 @@ python -m http.server 8000
 - 主页仅公开简历中的联系邮箱，没有复制电话号码、详细住址或完整简历附件。
 - 未执行或解析 `AuditWorkflow.lnk`；桌面应用的描述来自简历。
 
-## GitHub Pages 部署（尚未执行）
+## GitHub Pages 部署
 
-用户确认内容并明确授权推送后，再提交和推送本地文件到 `main` 分支。
+主页源文件位于 `main` 分支的仓库根目录，无需构建。
 
 在 GitHub 仓库的 **Settings → Pages → Build and deployment** 中，选择 **Deploy from a branch**，分支选择 **main**，目录选择 **/(root)** 并保存。
 
-当前仓库所属账号为 `Hoilap`，仓库名为 `dengkn.github.io`。它不是与账号同名的 `Hoilap.github.io` 用户站点仓库；按项目站点路径配置时，地址通常为 `https://hoilap.github.io/dengkn.github.io/`。以 Pages 设置中实际显示的地址为准。所有站内资源使用相对路径，支持项目子路径。
-
-如需使用账号根站点地址 `https://hoilap.github.io/`，需要另行确认是否改用 `Hoilap.github.io` 仓库；此处没有重命名仓库或更改远程配置。
+仓库已由用户更名为 `Hoilap/Hoilap.github.io`。启用 GitHub Pages 后，默认主页地址为 `https://hoilap.github.io/`，英文版为 `https://hoilap.github.io/en.html`。以 Pages 设置中实际显示的部署状态和地址为准。
 
 官方部署说明：https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
