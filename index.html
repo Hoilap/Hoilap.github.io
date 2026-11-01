@@ -69,7 +69,16 @@
           <h3>酒店私域分销</h3>
           <p class="project-subtitle">面向酒店业务的应用开发</p>
           <p>当前正在开发的另一项业务项目，以酒店私域分销为场景。我关注如何从业务需求出发，把流程理解与软件工程连接起来。</p>
-          <div class="project-footer"><span>酒店业务</span><span>私域分销</span><span>应用开发</span></div>
+
+            <section class="hotel-data" aria-label="单商品经营数据">
+              <div class="data-heading"><h4>单商品经营数据</h4><span>DATA SNAPSHOT</span></div>
+              <p class="data-note">用户提供的数据快照 · 累计上架 16 天 · 统计截止日期未提供</p>
+              <p class="listing-name" lang="zh-CN">全球酒店代订【周四买最便宜】｜ 全季、亚朵、桔子、希岸、速八</p>
+              <dl class="business-metrics"><div><dt>支付金额</dt><dd>2,753.00</dd></div><div><dt>支付订单数</dt><dd>9</dd></div><div><dt>支付人数</dt><dd>6</dd></div><div><dt>点击支付转化率</dt><dd>7.89%</dd></div></dl>
+              <dl class="listing-journey"><div><dt>商品曝光次数</dt><dd>1,193</dd></div><div><dt>商品浏览人数</dt><dd>76</dd></div><div><dt>询单人数</dt><dd>52</dd></div><div><dt>支付人数</dt><dd>6</dd></div></dl>
+              <p class="data-note">仅展示该商品的渠道统计，不代表项目整体业绩。商品标价与支付金额为不同统计字段，支付金额不等于净收入或利润。</p>
+            </section>
+<div class="project-footer"><span>酒店业务</span><span>私域分销</span><span>应用开发</span></div>
         </article>
       </div>
     </section>
@@ -91,15 +100,15 @@
       </div>
       <div class="research">
         <h3 class="small-heading">LLM 研究</h3>
-        <article><div><p class="research-meta">01 / 持续学习 · 第一作者</p><h4 lang="en">Anchoring Contextual Knowledge: Continual Learning with Prompt Dense Signals</h4><p>研究大语言模型持续学习中的灾难性遗忘，探索以 prompt 稠密蒸馏信号平衡模型的可塑性与稳定性。</p></div><span class="paper-status">简历记载：AAAI 在投</span></article>
+        <article><div><p class="research-meta">01 / 持续学习 · 第一作者</p><h4 lang="en">Anchoring Contextual Knowledge: Continual Learning with Prompt Dense Signals</h4><p>研究大语言模型持续学习中的灾难性遗忘，探索以 prompt 稠密蒸馏信号平衡模型的可塑性与稳定性。</p></div><span class="paper-status">AAAI 在投</span></article>
         <article><div><p class="research-meta">02 / 知识蒸馏 · 第二作者</p><h4 lang="en">Endpoint-Guided Trajectory Regularization for Autoregressive Language-Model Distillation</h4><p>研究端点引导的轨迹正则化（EGFD），通过引导学生模型逐层预测轨迹，加强最终分布的监督。</p></div><span class="paper-status">AAAI 在投</span></article>
-        <article><div><p class="research-meta">03 / 持续适配</p><h4 lang="en">BCMoE: Expert Lifecycle Management for Budget-Constrained Continual Adaptation</h4></div><span class="paper-status">ICASSP 在投</span></article>
+        <article><div><p class="research-meta">03 / 持续适配</p><h4 lang="en">BCMoE: Expert Lifecycle Management for Budget-Constrained Continual Adaptation</h4><p>面向可训练参数预算受限的持续适配，通过已有专家重路由、任务敏感层的专家扩展与容量回收，管理 MoE 专家的完整生命周期。</p><details class="paper-abstract"><summary>查看完整摘要</summary><p>现代多媒体平台与交互系统面临分布随时间演变的非平稳数据流，因此持续适配至关重要。然而，在实际应用中，适配往往受到严格的可训练参数预算约束。在这种约束下，模型需要判断现有容量是否足够、何时需要新增容量，以及无法继续扩展时如何保持适配能力。为此，我们提出 BCMoE：一种具备预算感知能力的持续适配框架，在冻结的预训练 Transformer 上引入轻量级 MoE 分支。BCMoE 通过三种动作开展分阶段适配：在每个阶段，首先探测仅通过对已有专家重新路由，是否足以应对新的分布偏移；当复用不足时，仅在少量任务敏感层扩展专家；当预算或结构性专家槽位限制进一步增长时，通过合并低效用专家，并基于缓存表征蒸馏其功能，实现容量回收。在阶段式领域偏移和混合比例偏移这两种代表性的非平稳流式场景中，实验表明 BCMoE 在相同预算上限下取得了最佳整体表现。进一步分析显示，这些收益来自各阶段对重路由、专家扩展与容量回收的选择，凸显了在固定可训练容量下进行适配时，专家生命周期管理的重要性。</p></details></div><span class="paper-status">ICASSP 在投</span></article>
       </div>
     </section>
 
     <section class="section stack" aria-labelledby="stack-title">
       <div><p class="eyebrow">TOOLKIT</p><h2 id="stack-title">连接研究与开发的工具箱</h2><p>围绕模型、数据与应用，构建业务工作流。</p></div>
-      <dl><div><dt>模型与数据</dt><dd>Python · PyTorch · pandas · NumPy<br>LLM 微调 / GPU 部署 · Gradio</dd></div><div><dt>应用与工程</dt><dd>Django · API 并发调用 · Linux<br>Docker · SaaS 应用开发</dd></div><div><dt>编程与计算</dt><dd>C++ / STL · MPI / pthread / OpenMP<br>CUDA · 数据结构与算法</dd></div></dl>
+      <dl><div><dt>模型与数据</dt><dd>Python · PyTorch · pandas · NumPy<br>LLM 微调 / GPU 部署 · Gradio</dd></div><div><dt>应用与工程</dt><dd>Django · API 并发调用 · Linux<br>Docker · SaaS 应用开发</dd></div><div><dt>工作流</dt><dd>工作流设计 · Agent 应用<br>LLM 集成 · 审计工作流桌面应用</dd></div></dl>
     </section>
 
     <section class="contact" aria-labelledby="contact-title"><p class="eyebrow">LET’S CONNECT</p><h2 id="contact-title">从一个具体的业务问题，<br>开始聊起。</h2><a href="mailto:dengkn@mail2.sysu.edu.cn">dengkn@mail2.sysu.edu.cn <span aria-hidden="true">↗</span></a></section>

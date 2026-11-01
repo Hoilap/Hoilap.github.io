@@ -69,7 +69,16 @@
           <h3>Hotel Private-Channel Distribution</h3>
           <p class="project-subtitle">Application development for hotel operations</p>
           <p>Another project currently in development, focused on hotel distribution through private customer channels. My focus is on understanding business needs and connecting workflow design with software engineering.</p>
-          <div class="project-footer"><span>Hospitality</span><span>Private-channel distribution</span><span>App development</span></div>
+
+            <section class="hotel-data" aria-label="Single-listing performance">
+              <div class="data-heading"><h4>Single-listing performance</h4><span>DATA SNAPSHOT</span></div>
+              <p class="data-note">User-provided snapshot · 16 cumulative days listed · Reporting end date not provided</p>
+              <p class="listing-name" lang="zh-CN">全球酒店代订【周四买最便宜】｜ 全季、亚朵、桔子、希岸、速八</p>
+              <dl class="business-metrics"><div><dt>Payment amount</dt><dd>2,753.00</dd></div><div><dt>Paid orders</dt><dd>9</dd></div><div><dt>Paying customers</dt><dd>6</dd></div><div><dt>Click-to-payment conversion</dt><dd>7.89%</dd></div></dl>
+              <dl class="listing-journey"><div><dt>Impressions</dt><dd>1,193</dd></div><div><dt>Visitors</dt><dd>76</dd></div><div><dt>People making inquiries</dt><dd>52</dd></div><div><dt>Paying customers</dt><dd>6</dd></div></dl>
+              <p class="data-note">Channel statistics for this listing only; not overall project results. Listed price and payment amount are separate fields. Payment amount is not net revenue or profit.</p>
+            </section>
+<div class="project-footer"><span>Hospitality</span><span>Private-channel distribution</span><span>App development</span></div>
         </article>
       </div>
     </section>
@@ -91,15 +100,15 @@
       </div>
       <div class="research">
         <h3 class="small-heading">LLM RESEARCH</h3>
-        <article><div><p class="research-meta">01 / CONTINUAL LEARNING · FIRST AUTHOR</p><h4 lang="en">Anchoring Contextual Knowledge: Continual Learning with Prompt Dense Signals</h4><p>Studying catastrophic forgetting in continual learning for LLMs, using dense distillation signals from prompts to explore the balance between plasticity and stability.</p></div><span class="paper-status">Under review at AAAI (as listed in résumé)</span></article>
+        <article><div><p class="research-meta">01 / CONTINUAL LEARNING · FIRST AUTHOR</p><h4 lang="en">Anchoring Contextual Knowledge: Continual Learning with Prompt Dense Signals</h4><p>Studying catastrophic forgetting in continual learning for LLMs, using dense distillation signals from prompts to explore the balance between plasticity and stability.</p></div><span class="paper-status">Under review at AAAI</span></article>
         <article><div><p class="research-meta">02 / KNOWLEDGE DISTILLATION · SECOND AUTHOR</p><h4 lang="en">Endpoint-Guided Trajectory Regularization for Autoregressive Language-Model Distillation</h4><p>Studying endpoint-guided trajectory regularization (EGFD), guiding the student model’s layer-wise prediction trajectory to strengthen supervision of the final distribution.</p></div><span class="paper-status">Under review at AAAI</span></article>
-        <article><div><p class="research-meta">03 / CONTINUAL ADAPTATION</p><h4 lang="en">BCMoE: Expert Lifecycle Management for Budget-Constrained Continual Adaptation</h4></div><span class="paper-status">Under review at ICASSP</span></article>
+        <article><div><p class="research-meta">03 / CONTINUAL ADAPTATION</p><h4 lang="en">BCMoE: Expert Lifecycle Management for Budget-Constrained Continual Adaptation</h4><p>Continual adaptation under a trainable-parameter budget, managing the MoE expert lifecycle through rerouting, growth in task-sensitive layers, and capacity recycling.</p><details class="paper-abstract"><summary>Read full abstract</summary><p>Modern multimedia platforms and interactive systems face non-stationary data streams whose distributions evolve over time, making continual adaptation essential. In practice, however, adaptation is often constrained by a strict budget on trainable parameters. Under such constraints, the model must determine whether existing capacity is sufficient, when additional capacity is required, and how adaptation can continue once further growth is no longer feasible. To address this problem, we propose BCMoE, a budget-aware continual adaptation framework built on a frozen pretrained Transformer with lightweight MoE branches. BCMoE performs stage-wise adaptation through three actions. At each stage, it first probes whether rerouting to existing experts is sufficient for the incoming distribution shift. When reuse is not enough, it expands experts only in a small set of task-sensitive layers. Once further growth is limited by the budget or by structural expert slots, it recycles capacity by merging low-utility experts and distilling their functionality from cached representations. Experiments on two representative non-stationary streaming settings, namely stage-wise domain shift and mixture-proportion shift, show that BCMoE achieves the best overall performance under the same budget upper bound. Further analysis indicates that these gains come from stage-wise choices over rerouting, expert growth, and capacity recycling, highlighting the importance of lifecycle management for adaptation under fixed trainable capacity.</p></details></div><span class="paper-status">Under review at ICASSP</span></article>
       </div>
     </section>
 
     <section class="section stack" aria-labelledby="stack-title">
       <div><p class="eyebrow">TOOLKIT</p><h2 id="stack-title">A toolkit for research &amp; development</h2><p>Building business workflows with models, data, and applications.</p></div>
-      <dl><div><dt>Models &amp; data</dt><dd>Python · PyTorch · pandas · NumPy<br>LLM fine-tuning / GPU deployment · Gradio</dd></div><div><dt>Apps &amp; engineering</dt><dd>Django · Concurrent API calls · Linux<br>Docker · SaaS application development</dd></div><div><dt>Programming &amp; computing</dt><dd>C++ / STL · MPI / pthread / OpenMP<br>CUDA · Data structures &amp; algorithms</dd></div></dl>
+      <dl><div><dt>Models &amp; data</dt><dd>Python · PyTorch · pandas · NumPy<br>LLM fine-tuning / GPU deployment · Gradio</dd></div><div><dt>Apps &amp; engineering</dt><dd>Django · Concurrent API calls · Linux<br>Docker · SaaS application development</dd></div><div><dt>Workflows</dt><dd>Workflow design · Agent applications<br>LLM integration · Audit workflow desktop app</dd></div></dl>
     </section>
 
     <section class="contact" aria-labelledby="contact-title"><p class="eyebrow">LET’S CONNECT</p><h2 id="contact-title">Let’s start with<br>a real business problem.</h2><a href="mailto:dengkn@mail2.sysu.edu.cn">dengkn@mail2.sysu.edu.cn <span aria-hidden="true">↗</span></a></section>
